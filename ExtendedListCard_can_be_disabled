@@ -1,56 +1,56 @@
 {
-"title": "ExtendedListCard",
-"type": "object",
-"description": "Карточка со списком ячеек и одной картинкой",
-"allOf": [
-{
-"$ref": "../card_base.json"
-},
-{
-"properties": {
-"cells": {
-"type": "array",
-"items": {
-"$ref": "../Cells/simple_cell_view.json"
-}
-},
-"cell_image": {
-"$ref": "../../Common/extended_image_view.json"
-},
-"type": {
-"type": "string",
-"enum": ["extended_list_card"]
-},
-"actions": {
-"$ref": "../../Actions/actions.json"
-},
-"log_id": {
-"type": "string",
-"description": "Id для отправки в метрику"
-},
-"background_image": {
-"$ref": "../../Common/flexible_image_view.json"
-},
-"background_color": {
-"allOf": [
-{
-"$ref": "../../Styles/surface_color.json"
-},
-{
-"default": "card"
-}
-]
-},
-"accessibility": {
-"type": "string",
-"description": "текст который бедет озвучен при выборе карточки механизмом accessibility"
-},
-"can_be_disabled": {
-"type": "boolean",
-"default": true
-}
-},
-"required": ["type", "cells", "cell_image"]
-}
-]
+  "title": "ExtendedListCard",
+  "type": "object",
+  "description": "Карточка со списком ячеек и одной картинкой",
+  "allOf": [
+    {
+      "$ref": "../card_base.json"
+    },
+    {
+      "properties": {
+        "cells": {
+          "type": "array",
+          "items": {
+            "$ref": "../Cells/simple_cell_view.json"
+          }
+        },
+        "cell_image": {
+          "$ref": "../../Common/extended_image_view.json"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["extended_list_card"]
+        },
+        "actions": {
+          "$ref": "../../Actions/actions.json"
+        },
+        "log_id": {
+          "type": "string",
+          "description": "Id для отправки в метрику"
+        },
+        "background_image": {
+          "$ref": "../../Common/flexible_image_view.json"
+        },
+        "background_color": {
+          "allOf": [
+            {
+              "$ref": "../../Styles/surface_color.json"
+            },
+            {
+              "default": "card"
+            }
+          ]
+        },
+        "accessibility": {
+          "type": "string",
+          "description": "текст который бедет озвучен при выборе карточки механизмом accessibility"
+        },
+        "can_be_disabled": {
+        "type": "boolean",
+        "default": true
+      }
+      },
+      "required": ["type", "cells", "cell_image", "can_be_disabled"]
+    }
+  ]
 }
