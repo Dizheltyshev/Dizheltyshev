@@ -1,0 +1,35 @@
+{
+  "title": "GalleryCard",
+  "type": "object",
+"can_be_disabled": true,
+  "description": "Горизонтальная галерея",
+  "allOf": [
+    {
+      "$ref": "../card_base.json"
+    },
+    {
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "gallery_item.json"
+          },
+          "minItems": 1
+        },
+        "bottom_text": {
+          "description": "Подпись под галереей",
+          "allOf": [
+            {
+              "$ref": "../../Common/text_view.json"
+            }
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": ["gallery_card"]
+        }
+      },
+      "required": ["items", "type"]
+    }
+  ]
+}
