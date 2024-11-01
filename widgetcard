@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "card": {
+        "type": "widget_title_card",
+        "can_be_disabled": true,
+        "cell": {
+          "type": "left_right_cell_view",
+          "left": {
+            "type": "simple_left_view",
+            "title": {
+              "text": "Главное",
+              "typeface": "headline1",
+              "text_color": "default"
+            }
+          },
+          "log_id": "custom_log_id"
+        }
+      }
+    }
+  ]
+}
