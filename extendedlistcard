@@ -3,6 +3,7 @@
     {
       "card": {
         "type": "extended_list_card",
+        "can_be_disabled": true,
         "paddings": {
           "bottom": "12x"
         },
