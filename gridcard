@@ -3,6 +3,7 @@
     {
       "card": {
         "type": "grid_card",
+        "can_be_diasbled": true,
         "items": [
           {
             "type": "greeting_grid_item",
