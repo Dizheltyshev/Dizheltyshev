@@ -1,0 +1,170 @@
+ "intent" : "run_app",
+    "items" : [
+      {
+        "card" : {
+          "background_color" : "card_background",
+          "can_be_disabled" : false,
+          "cells" : [
+            {
+              "left" : {
+                "icon_vertical_gravity" : "center",
+                "texts" : {
+                  "subtitle" : {
+                    "margins" : {
+                      "bottom" : "2x",
+                      "left" : "0x",
+                      "right" : "0x",
+                      "top" : "0x"
+                    },
+                    "max_lines" : 1,
+                    "text" : "Если не приходят СМС",
+                    "text_color" : "default",
+                    "typeface" : "body1"
+                  },
+                  "title" : {
+                    "margins" : {
+                      "bottom" : "0x",
+                      "left" : "0x",
+                      "right" : "0x",
+                      "top" : "0x"
+                    },
+                    "max_lines" : 0,
+                    "text" : "Что делать",
+                    "text_color" : "default",
+                    "typeface" : "headline3"
+                  }
+                },
+                "type" : "simple_left_view"
+              },
+              "paddings" : {
+                "bottom" : "2x",
+                "left" : "0x",
+                "right" : "8x",
+                "top" : "6x"
+              },
+              "type" : "left_right_cell_view"
+            },
+            {
+              "actions" : [
+                {
+                  "deep_link" : "sbolonline:\/\/pushnotifications\/pushsettings?internal_source=audiohelper543",
+                  "type" : "deep_link"
+                }
+              ],
+              "divider" : {
+                "size" : "d3",
+                "style" : "default"
+              },
+              "left" : {
+                "icon" : {
+                  "address" : {
+                    "identificator" : "gear",
+                    "type" : "local"
+                  },
+                  "margins" : {
+                    "bottom" : "7x",
+                    "left" : "0x",
+                    "right" : "6x",
+                    "top" : "5x"
+                  },
+                  "size" : {
+                    "height" : "medium",
+                    "width" : "medium"
+                  },
+                  "tint_color" : "solid_brand"
+                },
+                "icon_vertical_gravity" : "center",
+                "texts" : {
+                  "subtitle" : {
+                    "margins" : {
+                      "bottom" : "6x",
+                      "left" : "0x",
+                      "right" : "0x",
+                      "top" : "0x"
+                    },
+                    "max_lines" : 0,
+                    "text" : "Возможно, получаете пуши\nвместо СМС",
+                    "text_color" : "secondary",
+                    "typeface" : "footnote1"
+                  },
+                  "title" : {
+                    "margins" : {
+                      "bottom" : "0x",
+                      "left" : "0x",
+                      "right" : "0x",
+                      "top" : "0x"
+                    },
+                    "max_lines" : 1,
+                    "text" : "Проверить настройки",
+                    "text_color" : "default",
+                    "typeface" : "body1"
+                  }
+                },
+                "type" : "simple_left_view"
+              },
+              "right" : {
+                "margins" : {
+                  "bottom" : "8x",
+                  "left" : "0x",
+                  "right" : "4x",
+                  "top" : "8x"
+                },
+                "type" : "disclosure_right_view"
+              },
+              "type" : "left_right_cell_view"
+            },
+            {
+              "left" : {
+                "icon" : {
+                  "address" : {
+                    "identificator" : "clock",
+                    "type" : "local"
+                  },
+                  "margins" : {
+                    "bottom" : "7x",
+                    "left" : "0x",
+                    "right" : "6x",
+                    "top" : "5x"
+                  },
+                  "size" : {
+                    "height" : "medium",
+                    "width" : "medium"
+                  },
+                  "tint_color" : "solid_brand"
+                },
+                "icon_vertical_gravity" : "center",
+                "texts" : {
+                  "subtitle" : {
+                    "max_lines" : 0,
+                    "text" : "СМС начнут приходить через\n24 часа",
+                    "text_color" : "secondary",
+                    "typeface" : "footnote1"
+                  },
+                  "title" : {
+                    "margins" : {
+                      "bottom" : "0x",
+                      "left" : "0x",
+                      "right" : "0x",
+                      "top" : "3x"
+                    },
+                    "max_lines" : 0,
+                    "text" : "Подождать, если новая\nсим-карта",
+                    "text_color" : "default",
+                    "typeface" : "body1"
+                  }
+                },
+                "type" : "simple_left_view"
+              },
+              "type" : "left_right_cell_view"
+            }
+          ],
+          "paddings" : {
+            "bottom" : "4x",
+            "left" : "8x",
+            "right" : "8x",
+            "top" : "6x"
+          },
+          "type" : "list_card"
+        }
+      }
+    ]
