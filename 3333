@@ -1,0 +1,105 @@
+{
+    "activate_app_info": true,
+    "additional_apps_payload": [],
+    "answerId": 1,
+    "app_info": {
+      "affiliationType": "BANKING",
+      "ageLimit": 18,
+      "allowFastRunApp": false,
+      "apkInfo": {},
+      "appearance": {
+        "header": {
+          "title": "Страховые продукты"
+        }
+      },
+      "applicationId": "6f17eb68-bd38-4c8a-a3e8-bf676eac5356",
+      "appversionId": "ab795217-3d26-45db-9130-bff9a447fc63",
+      "availableOrientations": [],
+      "frontendEndpoint": null,
+      "frontendStateId": "4221e5b3-c972-494b-ae39-abaccd67effc_6f17eb68-bd38-4c8a-a3e8-bf676eac5356_ab795217-3d26-45db-9130-bff9a447fc63",
+      "frontendType": "DIALOG",
+      "nativeHeader": false,
+      "projectId": "4221e5b3-c972-494b-ae39-abaccd67effc",
+      "securityAccess": {},
+      "systemName": "SmartApp_UB"
+    },
+    "asr_hints": {
+      "words": [
+        "Ещё страховки к ипотеке"
+      ]
+    },
+    "assistant_items": [],
+    "auto_listening": false,
+    "character": {
+      "id": "sber"
+    },
+    "intent": "run_app",
+    "items": [
+      {
+        "card": {
+          "addressee": "Ипотечное страхование недвижимости                                  ",
+          "icon_url": "https://sberbank.ru/transfer_success.png",
+          "style": "success",
+          "title": "Страховка оплачена",
+          "transfer_amount": "1 000 ₽",
+          "type": "p2p_transfer_result"
+        }
+      },
+      {
+        "command": {
+          "action": {
+            "message_name": "SERVER_ACTION",
+            "server_action": {
+              "action_id": "payment_done",
+              "parameters": {
+                "node": "W0090.04.06",
+                "paymentSum": "1000",
+                "productName": "ипотечное страхование недвижимости",
+                "scenario": "W0090.Real_estate_mortgage_insurance_prolongation"
+              }
+            },
+            "type": "server_action"
+          },
+          "type": "action"
+        }
+      }
+    ],
+    "last": true,
+    "led_display": {},
+    "projectName": "Страховые продукты",
+    "suggestions": {
+      "buttons": [
+        {
+          "actions": [
+            {
+              "should_send_to_backend": false,
+              "text": "Ещё страховки к ипотеке",
+              "type": "text"
+            },
+            {
+              "message_name": "RUN_APP",
+              "server_action": {
+                "action_id": "run_app",
+                "app_info": {
+                  "systemName": "SmartApp_UB"
+                },
+                "parameters": {
+                  "alternative_text": [
+                    "(ещё)"
+                  ],
+                  "button_text": "Ещё страховки к ипотеке",
+                  "node": "W0090.03.01",
+                  "node_from": "W0090.04.06",
+                  "scenario": "W0090.Real_estate_mortgage_insurance_prolongation"
+                }
+              },
+              "type": "server_action"
+            }
+          ],
+          "title": "Ещё страховки к ипотеке"
+        }
+      ]
+    },
+    "userSettings": {},
+    "voice": "She_HQ"
+  }
