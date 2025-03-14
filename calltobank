@@ -1,0 +1,10 @@
+{
+  "items": [
+     {
+      "bubble": {
+        "text": "как позвонить в банк: [CalltoBank](sbolonline://shortcut/callToBank)",
+        "markdown": true
+      }
+    }
+  ]
+}
