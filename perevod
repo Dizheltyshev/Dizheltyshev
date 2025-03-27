@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "bubble": {
+        "text": "Вижу 3 контакта с похожим именем. Выберите из списка, кому переводить или назовите другое имя",
+        "markdown": true,
+        "expand_policy": "auto_expand"
+      }
+    },
+    {
+      "card": {
+        "type": "p2p_contact_selection",
+        "can_be_disabled": true,
+        "title": "Недавние получатели",
+        "max_lines": 0,
+        "contacts": [
+          {
+            "id": 1000,
+            "action": {
+              "send_contact_phone": 1000,
+              "template": "1. Серов Исак ПСИ\n[[placeholder]]"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
