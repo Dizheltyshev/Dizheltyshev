@@ -1,0 +1,7 @@
+{"card":
+{"type":"p2p_contact_selection",
+"can_be_disabled":true,
+"max_lines": 0,
+"title":"Недавние получатели",
+"contacts":
+[{"id":1006,"action":{"send_contact_phone":1006,"template":"Инна\n[[placeholder]]"}}]}}
